@@ -1,0 +1,171 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 17px;
+    color: #222;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+/* ===== heading ===== */
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+}
+
+.section-padding{
+  padding:50px 0;
+  background-color:#fff;
+}
+.section-title{
+  text-align:center;
+}
+.section-title h2{
+  font-size:32px;
+  color:#222;
+  position:relative;
+  z-index:1;
+  padding-bottom:30px;
+  margin-bottom:30px;
+}
+.section-title h2:before{
+  position:absolute;
+  content:"";
+  background:red;
+  width:240px;
+  left:50%;
+  bottom:0;
+  margin-left:-120px;
+  height:5px;
+}
+.section-title h2:after{
+  position:absolute;
+  width:80px;
+  bottom:0;
+  left:50%;
+  background:yellow;
+  height:5px;
+  content:"";
+  transform:translate(-50%, 0);
+}
+.section-title p{
+  font-size:17px;
+  color:#444;
+  position:relative;
+  padding-bottom:10px;
+}
+
+
+
+.single-service-area{
+  text-align:center;
+  min-height:300px;
+  width:100%;
+  margin-top:50px;
+  /*border:1px solid red;*/    /* ------------  what to need same height section  -------------- */
+}
+
+.service-icon-container-table{
+  display:table;
+  width:100%;
+  height:100px;
+}
+.service-icon-tablecell{
+  display:table-cell;
+  vertical-align:middle;
+}
+.service-icon-tablecell img,
+.service-icon-tablecell i.fa {
+  height:100px;
+  font-size:100px;
+  width:auto;
+  color:red;
+}
+
+.single-service-area h3{
+  font-size:24px;
+  color:#555;
+  margin-top:30px;
+}
+
+.single-service-area p{
+  font-size:20;
+  color:#888;
+  margin-top:10px;
+  padding-bottom:20px;
+}
+
+
+
+.service-icon-container-table:before{
+  position:absolute;
+  content:"";
+  background:red;
+  width:240px;
+  left:0;
+  bottom:0;
+  height:5px;
+  transition:.5s;
+  visibility:hidden;
+}
+
+.single-service-area:hover .service-icon-container-table:before{
+  left:50%;
+  margin-left:-120px;
+  visibility:visible;
+}
+
+
+
+.service-icon-container-table:after{
+  position:absolute;
+  width:80px;
+  bottom:0;
+  left:0;
+  background:yellow;
+  height:5px;
+  content:"";
+  visibility: hidden;
+}
+
+
+
+
+.single-service-area:hover .service-icon-container-table:after{
+  left:50%;
+  transform:translate(-50%, 0);
+  visibility: visible;
+}
+
+
+
+
+
+/**/
