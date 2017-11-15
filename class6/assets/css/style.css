@@ -1,0 +1,181 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#333;
+}
+html, body {
+  color:#787878;
+  background-color: #ddd;
+}
+a:hover { text-decoration: none }
+
+.section-padding{
+  padding:90px 0;
+  background-color: #fff;
+}
+.section-title h2{
+  margin-bottom: 20px;
+}
+.section-title{
+  text-align:center;
+  margin-bottom:70px;
+}
+.single-pricing-box h3{
+  transition: .1s;
+}
+.section-title span{
+  color:#2fa55e;
+}
+.single-pricing-box{
+  border:1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  transition: .5s;
+}
+.single-pricing-box:hover{
+  border:1px solid #2fa55e;
+  box-shadow: 0 0 50px #f1f1f1;
+  transform: scale(1.01);
+  transition: .5s;
+}
+.single-pricing-box h3{
+  text-transform: uppercase;
+}
+.single-pricing-box .pricing-icon{
+  font-size: 60px;
+  margin-bottom:20px;
+  margin-top: 20px;
+  transition: .3s;
+}
+.single-pricing-box .pricing-icon img{
+  max-width:88px;
+  transition: .3s;
+}
+.single-pricing-box .pricing-list{
+  text-align: left;
+  margin-bottom:23px;
+}
+.single-pricing-box .pricing-list ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 16px;
+  line-height: 2.5;
+}
+.pricing-list ul li{
+  /*position: relative;*/
+  padding-left: 20px;
+  transition: .3s;
+
+}
+.pricing-list ul li:before{
+  font-family: fontAwesome;
+  content: "\f00c";
+  color: #2fa55e;
+  padding-right: 10px;
+  /*position: absolute;
+  left: 0;
+  top: 0;*/
+}
+.pricing-list ul li.unSupported:before{
+  content: "\f00d";
+  color: #eb3036;
+
+}
+.single-pricing-box h3.pricing-count{
+  text-transform: none;
+}
+
+
+.bordered-btn{
+  border: 1px solid #333;
+  border-radius: 50px;
+  padding:10px 30px;
+  display: inline-block;
+  color:#2fa55e;
+  transition: .1s;
+}
+
+.bordered-btn:hover{
+  background-color: #2fa55e;
+  color:#fff;
+}
+.single-pricing-box:hover .pricing-icon{
+  color: #2fa55e;
+}
+.single-pricing-box:hover .pricing-icon img{
+  opacity: .7;
+}
+
+.single-pricing-box .pricing-list ul li:hover{
+  padding-left: 25px;
+  transition: .1s;
+}
+
+.backSlash{
+  font-size: 1.2em;
+  padding: 0 2px;
+  color: #888;
+}
+.perMonth{
+  color: #2fa55e;
+}
+
+.hot-deal{
+  background-color: rgba(68,237,135,0.1);
+  position: relative;
+  top: -10px;
+}
+.hot-deal .price{
+  font-size: 2em;
+  color: red;
+  opacity: .5;
+}
+.hot-deal .bordered-btn{
+  background-color: red;
+  color: #fff;
+}
+
+.hot-deal .bordered-btn:hover{
+  background-color: red;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
