@@ -1,0 +1,119 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 17px;
+    color: #555;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+/* ===== heading ===== */
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,footer{
+  background: rgba(0,0,0,.5);
+  padding: 30px;
+  font-size: 32px;
+  text-align:center;
+}
+.section-padding{
+  padding: 50px 0;
+  margin: 30px 0;
+}
+.section-title h2{
+  font-size: 28px;
+  color:#222;
+}
+.single-service-item{
+  margin-top: 30px;
+  background: #fff;
+  transition: .2s;
+}
+.single-service-item:hover{
+  box-shadow: 0 5px 10px #eaffe7;
+}
+.service-item-bg{
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+
+}
+.service-item-bg-1{  background-image: url("../img/laptop-dell.jpg");}
+.service-item-bg-2{  background-image: url("../img/laptop-doctor.jpg");}
+.service-item-bg-3{  background-image: url("../img/mac.jpg");}
+.service-item-bg-4{  background-image: url("../img/rubikscube.jpg");}
+
+.service-item-content{
+  padding: 10px 10px;
+  margin-top: 15px;
+}
+.service-item-content h3{
+  font-size: 20px;
+  color: #333;
+}
+.service-item-content p{
+  line-height: 1.7;
+}
+.service-readmore-btn{
+  text-align:center;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  background: transparent;
+  color:#39ca74;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  transition: .3s;
+}
+.service-readmore-btn:hover{
+  background: #39ca74;
+  color:#fff;
+  padding:10px 20px;
+}
+.service-readmore-btn i.fa{
+  padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
