@@ -1,0 +1,106 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    color:#222;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+  color: #333;
+}
+a:hover { text-decoration: none }
+
+header{background-color: rgba(0,0,0,.5); text-align:center; padding: 20px;}
+footer{background-color: rgba(0,0,0,.5); text-align:center; margin-top: 15px;  padding: 20px;}
+
+.section-padding{padding: 70px 0;}
+/*.myCarousel-section{background-color: rgba(255,255,255,.8);}*/
+.section-heading h2{
+  position: relative;
+  padding-bottom: 5px;
+}
+.section-heading h2::before{
+  position: absolute;
+  border:2px solid #13acf3;
+  width: 50px;
+  left:0;
+  bottom:0;
+  content:"";
+}
+.section-heading h2::after{
+  position: absolute;
+  border:2px solid #ddd;
+  width: 25px;
+  left:50px;
+
+  bottom:0;
+  content:"";
+}
+.owl-carousel-items{
+  border-radius: 15px;
+  /*background: rgba(255,255,255,.5);*/
+  padding: 20px 0;
+  margin-top:20px;
+}
+.owl-carousel-items .owl-carousel-item img{
+  max-width: 150px;
+  width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+
+  display:block;
+  margin-bottom: 10px;
+}
+.owl-carousel-items .owl-carousel-item .item-meta{padding: 10px 10px;}
+.owl-carousel-items .owl-carousel-item .item-meta h3{
+  font-size: 20px;
+  display:inline-block;
+}
+.owl-carousel-items .owl-carousel-item .item-meta h3>small{
+  display:block;
+  background-color: #13acf3;
+  padding:5px 5px;
+  margin-top: 5px;
+  color:#fff;
+}
+.owl-carousel-items .owl-carousel-item .item-meta p{padding-top: 10px;}
+.owl-carousel-items .owl-controls .owl-nav{
+  position: absolute;
+  top:-40px;
+  right:0;
+}
+.owl-carousel-items .owl-controls .owl-nav div{
+  background-color: #ddd;
+  color: #222;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 5px;
+  transition: .3s;
+}
+.owl-carousel-items .owl-controls .owl-nav div:hover{
+  background: #13acf3;
+  color: #fff;
+}
