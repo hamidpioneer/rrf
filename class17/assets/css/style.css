@@ -811,11 +811,12 @@ a.menu-trigger span:nth-child(3) {width: 75%;}
     margin: 50px 0;
   }
   input[type=email] {
-    width: 100%;
+    width: 48%;
+	float: left;
   }
   input[type=submit] {
-    width: 100%;
-    margin-top: 10px;
+    width: 48%;
+	float: right;
   }
   .footer-area{
     padding: 10px 0;
