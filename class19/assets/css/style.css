@@ -66,7 +66,7 @@ img {
     display: block;
     color: #626262;
     text-transform: uppercase;
-    padding: 30px 50px;
+    padding: 30px 30px;
     border-bottom: 5px solid transparent;
     transition: .3s;
 }
