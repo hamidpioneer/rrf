@@ -116,6 +116,16 @@ p.blog-meta {
 }
 p.blog-meta a {
     color: #b4ad9e;
+    display:inline-block;
+    padding:0 2px;
+    margin-left: 10px;
+    border-bottom: 5px solid transparent;
+    transition: .3s;
+}
+p.blog-meta a:hover {
+    background: #555;
+    color: #fff;
+    border-bottom-color: #000;
 }
 .blog-box-content {
     margin-bottom: 30px;
