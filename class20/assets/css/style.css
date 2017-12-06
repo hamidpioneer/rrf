@@ -1,0 +1,500 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Playfair Display', serif;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.714;
+    color: #626262 ;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+/* ===== heading ===== */
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:400;
+    padding:0;
+}
+
+a {
+    text-decoration:none;
+    display:inline-block;
+    /*color:#222;*/
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus {
+    outline: 0 solid;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog-meta,
+.blog-readmore-btn{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+}
+
+
+/* Start mainmenu */
+.logo {
+    padding: 70px 0;
+}
+.mainmenu{
+  padding:40px 0;
+}
+.mainmenu ul {
+    padding:  0;
+    margin:  0;
+    list-style: none;
+    text-align: right;
+}
+.mainmenu ul li {
+    display: inline-block;
+    transition:.3s;
+}
+.mainmenu ul li a {
+    display: block;
+    color: #626262;
+    text-transform: uppercase;
+    padding: 30px 30px;
+    border-bottom: 5px solid transparent;
+    transition: .3s;
+}
+.mainmenu ul li:hover a {
+      background: #555;
+      color: #fff;
+      border-bottom-color: #000;
+}
+.mainmenu ul li:last-child{
+  padding-right:0;
+}
+
+/* End mainmenu */
+
+
+
+
+/* Start single-blog-item */
+.single-blog-item {
+    margin-bottom: 120px;
+}
+.single-blog-item h2 {
+    margin: 20px 0;
+}
+.single-blog-item h2 a {
+    color: #626262;
+}
+.single-blog-item:hover .blog-featured-content a>img,
+.single-blog-item.big-blog-box:hover .blog-featured-content>img{
+    opacity: .5;
+}
+
+
+.blog-featured-content {
+    margin-bottom: 30px;
+}
+.blog-featured-content img {
+    width: 100%;
+}
+.big-blog-box .blog-featured-content {
+    margin-bottom: 80px;
+}
+
+
+p.blog-meta {
+    text-transform: uppercase;
+}
+p.blog-meta a {
+    color: #b4ad9e;
+    display:inline-block;
+    padding:0 2px;
+    margin-left: 10px;
+    border-bottom: 5px solid transparent;
+    transition: .3s;
+}
+p.blog-meta a:hover {
+    background: #555;
+    color: #fff;
+    border-bottom-color: #000;
+}
+.blog-box-content {
+    margin-bottom: 30px;
+}
+.blog-box-content p:last-child {
+    margin: 0;
+}
+/* End single-blog-item */
+
+
+
+/* Start Button */
+a.blog-readmore-btn {
+    color: #b4ad9e;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    border-bottom: 5px solid transparent;
+    transition: .3s;
+}
+a.blog-readmore-btn:hover {
+    padding: 10px 20px;
+    background: #555;
+    color: #fff;
+    border-bottom-color: #000;
+}
+
+a.load-more-btn {
+    position: relative;
+    display:  inline-block;
+    color: #626262;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: -20px;
+    transition: .3s;
+    border-bottom: 5px solid transparent;
+    border-top: 1px solid #626262;
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+    border-bottom: 1px solid #626262;
+
+}
+a.load-more-btn:hover {
+    background: #555;
+    color: #fff;
+    border-bottom: 5px solid #000;
+    padding-bottom:11px;
+}
+/* End Button */
+
+
+
+/* Start newsletter-area */
+.newsletter-area {
+    background-color: #f0f0f0;
+    padding: 70px 0;
+    text-align: center;
+    margin-bottom: 120px;
+    transition: .3s;
+}
+.newsletter-area h2 {
+    margin-bottom: 50px;
+}
+.newsletter-form {
+    position: relative;
+    max-width: 360px;
+    width:100%;
+    margin:  0 auto;
+    border-bottom: 5px solid #aaa;
+    transition: .3s;
+}
+.newsletter-form input[type=email] {
+    border: none;
+    background: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+}
+.newsletter-form input[type=email]:focus {
+    outline: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,.5);
+    border: none;
+}
+.newsletter-form input[type=email]::placeholder {
+    opacity: .5;
+}
+.newsletter-area:hover .newsletter-form{
+    border-bottom-color: #000;
+}
+.newsletter-form button {
+    position: absolute;
+    top: 0;
+    right:  10px;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    transition: .5s;
+}
+.newsletter-form button>img {
+    position: relative;
+    transition: .5s;
+}
+.newsletter-area:hover img{
+  width: 30px;
+  height: 30px;
+}
+.newsletter-area:hover .newsletter-form button {
+    right: 0;
+}
+/* End newsletter-area */
+
+
+
+
+
+/* Start footer-area */
+.footer-area {
+    background-color: #f0f0f0;
+    padding: 35px 0;
+    margin-top: 90px;
+}
+.footer-area ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-area ul li {
+    display: inline-block;
+    padding-right: 40px;
+}
+.footer-area a {
+    padding: 10px 10px;
+    border-bottom: 5px solid transparent;
+    text-align: center !important;
+    color:  #000;
+    transition: .3s;
+}
+.footer-area a:hover {
+    background: #555;
+    color: #fff;
+    border-bottom-color: #000;
+}
+.footer-area .text-right {
+    padding-left: 10px;
+}
+.footer-area .text-right a {
+    padding-left: 13px;
+}
+/* End footer-area */
+
+
+
+
+
+/* Start Responsive */
+/* medium screen*/
+@media only screen and (min-width: 992px) and (max-width: 1200px){ /* medium/Laptop screen*/
+  .mainmenu ul li a {
+    padding: 30px 30px;
+  }
+}
+
+
+/* medium screen*/
+@media only screen and (min-width: 768px) and (max-width:991px){ /* Tablet screen*/
+  .mainmenu ul li a {
+    padding: 30px 15px;
+  }
+}
+
+/* large Mobile screen*/
+@media only screen and (min-width: 576px) and (max-width:767px){ /* large Mobile screen*/
+  .mainmenu {
+    padding: 22px 0;
+  }
+  .mainmenu ul li a {
+    padding: 35px 8px;
+    font-size: 15px;
+  }
+
+  .logo {
+      padding: 50px 0;
+  }
+
+  .big-blog-box .blog-featured-content {
+      margin-bottom: 30px;
+  }
+
+  .single-blog-item h2 {
+      margin-top: 0;
+  }
+
+  .single-blog-item {
+      margin-bottom: 50px;
+  }
+
+  p.blog-meta a {
+      font-size: 75%;
+  }
+
+  .newsletter-area {
+      margin-bottom: 70px;
+  }
+
+  .blog-featured-content {
+      margin-bottom: 20px;
+  }
+
+  p.blog-meta {
+      margin-bottom: 10px;
+  }
+
+  a.load-more-btn {
+      margin-top: 0;
+      font-size: 80%;
+      padding: 10px 20px;
+  }
+
+  a.load-more-btn::after {
+  }
+
+  .section-padding {
+      margin: 30px 0;
+  }
+
+  .footer-area {
+      margin: 0;
+      font-size: 80%;
+  }
+
+  .footer-area a {
+      padding: 10px 10px;
+  }
+
+  .footer-area .text-right {
+      padding: 10px 0;
+  }
+
+  .newsletter-area h2 {
+      margin-bottom: 20px;
+      font-size: 32px;
+  }
+}
+
+
+/* Small/Mobile screen*/
+@media only screen  and (max-width:575px){ /* Small/Mobile screen*/
+  .logo {
+    padding: 30px 0;
+  }
+
+  .logo img, .logo a {
+      margin: 0 auto;
+      display: block;
+  }
+
+  .mainmenu {
+      padding: 10px 0 30px;
+  }
+
+  .mainmenu ul {
+      text-align: center;
+  }
+
+  .mainmenu ul li a {
+      padding: 10px 10px;
+      font-size: 14px;
+  }
+
+  .big-blog-box .blog-featured-content {
+      margin-bottom: 10px;
+  }
+
+  p.blog-meta a {
+      font-size: 12px;
+      padding: 10px;
+      margin: 0;
+  }
+
+  .single-blog-item h2 {
+      font-size: 32px;
+      margin-top: 0;
+  }
+
+  p.blog-meta {
+      margin: 0;
+  }
+
+  .blog-box-content {
+      margin-bottom: 20px;
+  }
+
+  .single-blog-item {
+      margin-bottom: 60px;
+  }
+
+  .blog-featured-content {
+      margin: 0;
+  }
+
+  .newsletter-area h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+  }
+
+  .newsletter-area {
+      padding: 50px 0;
+      margin-bottom: 60px;
+  }
+
+  a.load-more-btn {
+      margin-top: 0;
+      font-size: 80%;
+      padding: 10px 20px;
+  }
+
+  .section-padding {
+      margin: 30px 0;
+  }
+
+  .footer-area {
+      margin-top: 20px;
+  }
+
+  .footer-area .col-sm-6.text-right {text-align: center;}
+
+  .footer-area ul li {
+      padding: 0 10px;
+      font-size: 80%;
+  }
+
+  .footer-area li, .footer-area a {
+  }
+
+  .footer-area .text-right {
+      text-align: center !important;
+      font-size: 80%;
+  }
+
+  .footer-area ul {
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
