@@ -424,6 +424,9 @@ a.load-more-btn:hover {
   .blog-featured-content {
       margin: 0;
   }
+  .blog-featured-content a {
+    width: 100%;
+  }
 
   .newsletter-area h2 {
       margin-bottom: 20px;
