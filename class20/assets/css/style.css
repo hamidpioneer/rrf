@@ -103,7 +103,8 @@ img {
 .blog-featured-content {
     margin-bottom: 30px;
 }
-.blog-featured-content img {
+.blog-featured-content a,
+.blog-featured-content a img {
     width: 100%;
 }
 .big-blog-box .blog-featured-content {
