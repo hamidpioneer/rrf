@@ -1,16 +1,14 @@
 html, body {
     margin:0;
     padding:0;
-    background-color:#999;
+    background-color:#ddd;
 
     /* -_-_- Fonts -_-_- */
     font-family: 'Ubuntu', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 
-    font-size: 17px;
-    color: #222;
+    font-size: 18px;
+    color: #555;
 }
 *, *::before, *::after {
     box-sizing:border-box;
@@ -39,105 +37,109 @@ img {
     height: auto;
 }
 
-
-
 .section-padding {
-    background: #fff;
-    padding: 5rem 0;
+  padding: 5rem 0;
+  background: #fff;
+  margin: 3rem 0;
 }
 .section-title {
-    text-align: center;
-    padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }
-.section-title h2 {
-  padding-bottom: 1rem;
+.site-underline {
+  position: relative;
+  height: 5px;
+  width: 2rem;
+  background: black;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 1rem;
+}
+.site-underline::after {
+  content: "";
+  background: #6aaf08;
+  width: 3rem;
+  height: 5px;
+  position: absolute;
+  right: 100%;
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+.site-underline::before {
+  content: "";
+  position: absolute;
+  background: #6aaf08;
+  width: 3rem;
+  height: 5px;
+  left: 100%;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+.single-featured-item {margin-bottom: 2rem;}
+.featured-image{
+  position: relative;
+  background-image: url("../img/man-103.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120px;
+}
+.featured-image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  min-width: 100%;
+  background: #6aaf08;
+  z-index: -1;
+}
+.featured-content {margin-left: 1rem;}
+.featured-content h3 {
+  color: #555;
   font-weight: 700;
+  font-size: 1.66rem;
+  border-bottom: 2px dashed #6aaf08;
+  padding-bottom: .55rem;
+  margin-bottom: 1rem;
+}
+.featured-content p {
+  color: #777;
+  font-size: .88rem;
+  font-weight: ;
+  line-height: 1.375;
 }
 
-.single-feature-item {margin-bottom: 2rem;}
-.bordered-img {
-    height: 120px;
-    width: 100px;
-    border: 2px solid #fff;
-    position: relative;
-    background: #ddd url("https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png") no-repeat center;
-    background-size: cover;
+.big-featured-image {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/man-102.png");
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fff;
+  z-index: 1;
 }
-.bordered-img::after {
-    content: "";
-    position: absolute;
-    background: green;
-    top: 35px;
-    left: 20px;
-    width: 100%;
-    height: 100%;
+.big-featured-image::after {
+  content: "";
+  background-color: #6aaf08;
+  width: 100%;
+  height: 100%;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  z-index: -1;
 }
-.single-feature-item h3 {
-    border-bottom: 2px dashed #999;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.555rem;
-    color: #555;
-  }
-.single-feature-item p {
-    color: #999;
-    line-height: 2;
-}
-.big-featured-bordered-img {
-    background: #ddd url(https://thumbs.dreamstime.com/b/delete-user-icon-delete-user-friend-avatar-symbol-ui-web-logo-sign-flat-design-app-stock-vector-80340777.jpg);
-    height: 520px;
-    width: 450px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    left: 2%;
-    top: 0;
-    float: right;
-}
-.big-featured-bordered-img:before {
-    content: "";
-    background: rgba(255,255,255,.3);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-.big-featured-bordered-img:after {
-    content: "";
-    background: green;
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    width: 100%;
-    height: 100%;
-}
-.bordered-underline {
-    position: relative;
-    height: 5px;
-    width: 1rem;
-    background: #000;
-    border-radius: 1rem;
-    left: 50%;
-    transform: translate(-50%);
-}
-.bordered-underline:before {
-    content: "";
-    background: green;
-    width: 2rem;
-    height: 5px;
-    position: absolute;
-    right: 100%;
-    border-radius: 1rem;
-    margin-right: .5rem;
-}
-.bordered-underline:after {
-    content: "";
-    position: absolute;
-    width: 2rem;
-    height: 5px;
-    background: green;
-    left: 100%;
-    margin-left: .5rem;
-    border-radius: 1rem;
+.big-featured-image::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: rgba(255,0,0,.5);
 }
