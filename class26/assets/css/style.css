@@ -1,0 +1,144 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+    font-size: 18px;
+    color: #333;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+/* ===== heading ===== */
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 1rem;
+    font-weight:700;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:inherit;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="url"],
+textarea {
+  background-color: #f9f9f9;
+  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+*::placeholder {
+  color: #777;
+  font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+  padding: 5rem 0;
+  background: #fff;
+}
+.white-box {
+  box-shadow: 0 0 5px rgba(100,0,0,.2);
+  padding: 2rem;
+  min-height: 580px;
+  margin-right: 3rem;
+}
+.white-box h4, .colored-box h4 {
+  font-size: 1.33rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.colored-box, .colored-box a {
+  color: #fff;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  border-radius: ;
+}
+.contact-form textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.site-btn {
+  text-align: center;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #52b0fb;
+  color: #fff;
+  font-size: .888rem;
+  font-weight: 700;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.colored-box {
+  background: #52b0fb;
+  padding: 2rem;
+  min-height: 580px;
+}
+.contact-info {
+  margin-bottom: 2rem;
+  line-height: 2;
+  position: relative;
+  padding-left: 3rem;
+  overflow-x:auto;
+}
+.contact-info i.fa {
+  position: absolute;
+  top: .5rem;
+  left: 0;
+  color: #fff;
+  font-size: 1.66rem;
+  line-height: 1.66rem;
+}
+
+.social-icons {
+  margin-top: 3rem;
+}
+.social-icons a:not(:last-child) {
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+}
+.social-icons a:last-child {
+  margin-right: 0;
+}
+.social-icons .fa {
+  background: #ddd;
+  font-size: 1.22rem;
+  line-height: 1.22rem;
+  width: 1.88rem;
+  height: 1.88rem;
+  color: #333;
+  text-align: center;
+  border-radius: 50%;
+  padding: .33rem;
+  border-bottom: 3px solid #aaa;
+}
+.social-icons a:hover .fa {
+  color: #52b0fb;
+  border: none;
+}
