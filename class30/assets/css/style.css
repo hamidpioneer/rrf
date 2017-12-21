@@ -63,7 +63,8 @@ img {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #666;
-  font-family: serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400px;
   line-height: 1.5;
 }
 .full-width-text-area p {
