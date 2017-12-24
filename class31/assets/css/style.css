@@ -86,6 +86,7 @@ body {
 
 .section-padding {
     padding: 80px 0;
+    overflow: auto;
 }
 
 .section-padding.full-height {
@@ -152,7 +153,12 @@ a.video-btn i.fa {
 }
 
 
-
+@media all and (max-width:768px){
+  .single-service-item{
+    margin: 1rem 0;
+  }
+  
+}
 
 
 
