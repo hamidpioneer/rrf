@@ -1,0 +1,231 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #555;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+    color: #000;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+*::placeholder {
+  color: #555;
+  font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boxed-btn, .bordered-btn {
+    display: inline-block;
+    background: #d8889b;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius:  5rem;
+    text-transform:  uppercase;
+    margin: 1rem 0;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: .777rem;
+}
+.boxed-btn:hover, .bordered-btn:hover {
+    color: #fff !important;
+    background: #555 !important;
+}
+.bordered-btn {
+  background:  none;
+  border: 2px solid #d8889b;
+  color: #000;
+}
+
+.promo-box-wrapper {
+    margin-left: -15px;
+    position:  relative;
+    height: 100%;
+}
+
+.single-promo-box {
+    display:  table;
+    background: #fff;
+    width: 50%;
+    float: left;
+    text-align:  center;
+    min-height: 25rem;
+    padding: 0 2rem;
+}
+.promo-box-table-cell  {
+    display:  table-cell;
+    vertical-align:  middle;
+    position:  relative;
+    top: 3rem;
+    transition:  .3s;
+}
+.single-promo-box:hover .promo-box-table-cell {top: 0rem;}
+.promo-box-table-cell .boxed-btn{
+  top:-3rem;
+  opacity:0;
+  visibility:hidden;
+}
+.single-promo-box:hover .promo-box-table-cell .boxed-btn {
+    top: 0rem;
+    opacity: 1;
+    visibility: visible;
+}
+.single-promo-box:hover  .promo-box-table-cell {top: 0rem;}
+
+.single-promo-box:nth-child(1) {color: #d8889b;}
+.single-promo-box:nth-child(2) {
+    background-color: #d8889b;
+    color: #fff;
+}
+.single-promo-box:nth-child(3) {
+    background-color: #7dbace;
+    color: #fff;
+}
+.single-promo-box:nth-child(4) {color: #7dbace;}
+
+.single-promo-box .promo-icon::before {font-size: 5rem;}
+.single-promo-box h2 {
+    font-weight: 900;
+    font-size: 1.44rem;
+    position:  relative;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.single-promo-box h2::after {
+    content:  "";
+    position:  absolute;
+    background: #7dbace;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+}
+.single-promo-box:nth-child(1) h2::after {background: #d8889b;}
+.single-promo-box:nth-child(2) h2::after,
+.single-promo-box:nth-child(3) h2::after {background: #fff;}
+
+.promo-content-wrapper {
+    line-height: 2;
+    display:  table;
+    height:  100%;
+}
+.promo-content-wrapper-table-cell {
+    display:  table-cell;
+    vertical-align:  middle;
+    padding: 0 2rem;
+}
+.promo-content-heading-section h3 {
+    color: #7dbace;
+    font-weight:  400;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: .33rem;
+}
+.promo-content-heading-section h2 {
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+.promo-content-heading-section h4 {
+    font-weight: 700;
+    margin-bottom:2rem;
+}
+.promo-content-heading-section p {line-height:  1.8;}
+
+.single-promo-box::after, .single-promo-box::before{
+  content:'';
+  clear:both;
+  display: table;
+}
+
+
+.btn-wrapper .boxed-btn {margin-right: 1rem;}
+.single-promo-box:nth-child(2) .boxed-btn {
+    background-color: #fff;
+    color: #d2229b;
+}
+.single-promo-box:nth-child(3) .boxed-btn {
+  background: #fff;
+  color: #7dbace;
+}
+.single-promo-box:nth-child(4) .boxed-btn {
+    background:  #7dbace;
+    color: #fff;
+}
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width:450px){
+  .single-promo-box{width: 100%;}
+}
+
+@media only screen and (max-width:767px){
+  .promo-box-wrapper{margin-left:auto;}
+  .promo-content-wrapper{
+    margin-bottom:5rem;
+  }
+  a.boxed-btn, a.bordered-btn{
+    display: block;
+    margin: 0 auto !important;
+    width: 80%;
+    margin-bottom: 5px !important;
+  }
+  /*a.boxed-btn{
+    margin-bottom: 1rem !important;
+  }*/
+}
+@media only screen and (max-width:798px){
+  html, body{font-size:14px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
