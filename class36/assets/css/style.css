@@ -36,7 +36,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+.fullwidth-section-area{background: #f5f6fa;}
 .boxed-btn, .bordered-btn {
     display: inline-block;
     background: #d8889b;
