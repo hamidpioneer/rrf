@@ -4,7 +4,7 @@ html, body {
     background-color:#ddd;
     /* -_-_- Fonts -_-_- */
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color: #fff;
     box-sizing:border-box;
 }
@@ -157,7 +157,7 @@ img {
 
 
 @media only screen and (max-width:767px){
-  html, body{font-size:15px;}
+  html, body{font-size:14px;}
   .section-padding {padding: 2rem 0;}
   .single-prize-box {
     width:  100%;
@@ -170,7 +170,7 @@ img {
   }
 }
 @media only screen and (min-width:1200px){
-  html, body{font-size:22px;}
+  html, body{font-size:18px;}
 }
 
 
