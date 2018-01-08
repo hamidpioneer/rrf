@@ -127,9 +127,11 @@ img {
     padding: 2rem;
     padding-right: 0;
     min-height: 30rem;
+	max-width: 50%;
   }
   .absolute-image {
-    max-width: 100%;
+    max-width: 60%;
     /*pacity: .1;*/
+	
   }
 }
