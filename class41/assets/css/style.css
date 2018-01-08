@@ -130,6 +130,6 @@ img {
   }
   .absolute-image {
     max-width: 100%;
-    opacity: .1;
+    /*pacity: .1;*/
   }
 }
