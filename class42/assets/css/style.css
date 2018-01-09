@@ -147,7 +147,7 @@ img {
 .single-product-box:hover::after {
   height: 120%;
   top: -10%;
-  opacity: 1;
+  opacity: 1 !important;
   visibility: visible;
 }
 /* Start Responsive CSS */
