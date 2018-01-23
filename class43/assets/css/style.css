@@ -1,0 +1,233 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#fff;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+*::placeholder {
+  color: #ddd;
+  font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-script{font-family: 'Aguafina Script', cursive;}
+.welcome-hero-section{
+  background-color: goldenrod;
+  background-image:url(../img/food-1.jpg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+.welcome-hero-section {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  transition: .3s;
+}
+.welcome-hero-section::after {
+  content: "";
+  background: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -99;
+  opacity: .5;
+}
+.welcome-hero-section:hover::after {opacity: .75;}
+.hero-content-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.hero-content-tablecell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+.header-area {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  background: rgba(100,100,100,.1);
+  padding: 1rem 0;
+  border-bottom: 2px solid rgba(100,100,100,.25);
+}
+.header-area h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.header-area h1::after {
+}
+.header-area h1 a {
+  position: relative;
+  padding-bottom: .5rem;
+}
+.header-area h1 a::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+}
+.main-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 1.2rem;
+}
+.main-menu li {
+  display: inline-block;
+}
+.main-menu li a {
+  padding: 0 .25rem;
+  border: 1px solid transparent;
+  text-align: center;
+  position: relative;
+  transition: .3s;
+}
+.main-menu li a.active::after, .main-menu li a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  height: 2px;
+}
+.title-script {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  margin-bottom: -2.5rem;
+  font-size: 4rem;
+  color: goldenrod;
+  z-index: -1;
+  position: relative;
+}
+.hero-content-table h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  z-index: 2;
+  position: relative;
+}
+.under-line-wrapper {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+.under-line-wrapper .middle-part i.fa {
+  color: goldenrod;
+  font-size: 1rem;
+}
+.under-line-wrapper .left-part, .under-line-wrapper .right-part {
+  width: 45%;
+  margin-top: calc(.5rem + 1px);
+  border: 1px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+.under-line-wrapper .right-part {
+  float: right;
+}
+.under-line-wrapper .middle-part {
+  width: 10%;
+}
+.under-line-wrapper .left-part, .under-line-wrapper .right-part, .under-line-wrapper .middle-part {
+  float: left;
+}
+.under-line-wrapper .left-part::after, .under-line-wrapper .right-part::after {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  content: "";
+  top: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid gray;
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+.under-line-wrapper .left-part::after {
+  left: -1px;
+  border-left-color: #fff;
+}
+.under-line-wrapper .right-part::after {
+  border-right-color: #fff;
+  right: -1px;
+}
+.next-step-arrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  text-align: center;
+  padding: .5rem;
+  font-size: 1rem;
+  background: goldenrod;
+  transition: .3s;
+}
+.next-step-arrow:hover{
+  color: goldenrod;
+  border: goldenrod;
+  background: #fff;
+  border-color: #fff;
+}
+
+
+/* Start Responsive CSS */
+/* breakpoint-xs: 0; breakpoint-sm: 576px; breakpoint-md: 768px; breakpoint-lg: 992px; breakpoint-xl: 1200px; */
+@media only screen and (max-width: 767px){
+  html, body{font-size: 14px;}
+  .welcome-hero-section .col-md-3,
+  .welcome-hero-section .col-md-9{
+    text-align: center !important;
+  }
+}
