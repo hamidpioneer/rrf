@@ -1,0 +1,144 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #222;
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+*::placeholder {
+  color: #555;
+  font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.pricing-section {
+  padding: 5rem 0;
+  background: #f1f1f1;
+}
+.single-pricing-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  transition: .3s;
+  position: relative;
+  z-index: 1;
+}
+.pricing-section {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.pricing-section a {
+  color: skyblue;
+}
+.pricing-box-price p.pricing-tag {
+  font-size: 3rem;
+  font-weight: 300;
+  color: skyblue;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.single-pricing-box h4 {
+  margin-bottom: 2rem;
+}
+.pricing-tag-time {
+  opacity: .7;
+}
+.pricing-box-content {
+  margin-top: 1rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+.pricing-box-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pricing-box-content ul li {
+  display: inline-block;
+  line-height: 1.2;
+  padding-bottom: .88rem;
+}
+.pricing-box-content ul li:last-child {
+  padding-bottom: 0;
+}
+.boxed-btn {
+  background: skyblue;
+  color: #fff !important;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  display: inline-block;
+  transition: .3s;
+}
+.single-pricing-box .boxed-btn {
+  margin-top: 1.5rem;
+}
+.single-pricing-box h4>span {
+  display: block;
+  font-size: 80%;
+  color: forestgreen;
+  font-weight: 400;
+}
+.single-pricing-box.active {
+  position: relative;
+  z-index: 1;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 1.5rem #777;
+}
+.single-pricing-box.active h4 {
+  margin-bottom: 1rem;
+  margin-top: -.5rem;
+}
+.single-pricing-box.active::before {
+  content: "";
+  position: absolute;
+  top: -.25rem;
+  left: 0;
+  height: .5rem;
+  width: 100%;
+  background: forestgreen;
+}
+.single-pricing-box:hover {
+  box-shadow: 0 0 1.5rem #777;
+}
+.boxed-btn:hover {
+  background: #fff;
+  color: #000 !important;
+  box-shadow: 0 5px 1rem skyblue;
+}
+.pricing-section-footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+/* Start Responsive CSS */
+/* breakpoint-xs: 0; breakpoint-sm: 576px; breakpoint-md: 768px; breakpoint-lg: 992px; breakpoint-xl: 1200px; */
