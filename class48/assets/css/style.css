@@ -1,0 +1,150 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #222;
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+*::placeholder {
+  color: #555;
+  font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.price-boxs {
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
+.single-price-box {
+  width: calc(100% /3);
+  float: left;
+  margin: 30px 0;
+  box-shadow: 0 0 15px #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #777;
+  line-height: 1.8;
+  transition: .3s;
+}
+.price-section {
+  padding: 80px 0;
+  background: rgba(0,0,0,.5);
+}
+.single-price-box.active {
+  margin: 0;
+}
+.price-heading {
+  color: #777;
+  padding: 40px;
+  background: #f1f1f1;
+}
+.price-heading h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.price-heading h1 {
+  color: #000;
+  font-size: 38px;
+  font-weight: 500;
+}
+.price-content {
+  padding: 40px;
+  background-color: #fff;
+}
+.price-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 2.2;
+}
+.active .price-content {
+  padding: 60px 40px;
+}
+.active .price-heading {
+  background: tomato;
+  color: #fff;
+}
+.active .price-heading h1, .active .price-heading h2 {
+  color: #fff;
+}
+.single-price-box.active {
+  margin-left: -.5%;
+  margin-right: -.5%;
+  width: calc(calc(100% /3) + 1%);
+  z-index: 2;
+  position: relative;
+  border: ;
+}
+.price-btn {
+  margin-top: 30px;
+  border: 2px solid tomato;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: tomato;
+  font-weight: 600;
+  transition: .3s;
+}
+.active .price-btn {
+  border-color: ;
+  background-color: tomato;
+  color: #fff;
+}
+.price-btn:hover {
+  border-color: #ccc;
+  color: #000;
+  background: #ccc;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.price-content ul>li {
+  position: relative;
+  transition: .3s;
+}
+.price-content ul > li:hover {
+  padding-left: 10px;
+}
+.single-price-box:hover {
+  box-shadow: 0 0 10px #999;
+}
+
+/* Start Responsive CSS */
+/* breakpoint-xs: 0; breakpoint-sm: 576px; breakpoint-md: 768px; breakpoint-lg: 992px; breakpoint-xl: 1200px; */
+@media only screen and (max-width: 767px){
+  .single-price-box,
+  .single-price-box.active{
+    width: 100%;
+    margin:0;
+    float: none;
+    margin: 15px 0;
+  }
+}
