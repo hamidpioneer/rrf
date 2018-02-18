@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$('.testimonial-carousel-items').owlCarousel({
+		items:1,
+		margin:15,
+		loop:true,
+		center:true,
+		nav:false,
+		dots:true
+	});
+});

@@ -1,0 +1,128 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-color:#ddd;
+    /* -_-_- Fonts -_-_- */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    color: #222;
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+    margin:0 0 15px;
+    font-weight:700;
+    padding:0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+    color:#222;
+}
+a:hover {
+    text-decoration:none;
+    color:inherit;
+}
+a:focus, input:focus, button:focus, textarea:focus {
+    outline: 0 solid;
+}
+*::placeholder {
+  color: #555;
+  font-weight: 700;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.testimonial-section-bg{
+  background-image:url(../img/testimonial-bg.png)
+}
+
+.user-avatar img {
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial-section-padding {
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position:relative;
+  z-index: 1;
+}
+.testimonial-section-bg {
+  background-color: #333;
+}
+.testimonial-text {
+  margin: 30px 0;
+  line-height: 1.7;
+  font-size: 18px;
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+}
+.testimonial-carousel-item h4>span {
+  font-size: 80%;
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.testimonial-carousel-items.owl-carousel .owl-item img {
+  border-radius: 50%;
+  width: ;
+}
+.testimonial-carousel-items::after, .testimonial-carousel-items::before {
+  font-family: "FontAwesome";
+  content: '\f10e';
+  position: absolute;
+  font-size: 30px;
+  opacity: .5;
+}
+.testimonial-carousel-items::after {
+  right: -15px;
+  bottom: 120px;
+}
+.testimonial-carousel-items::before {
+  top: 120px;
+  left: -15px;
+  position: absolute;
+  content: "\f10d";
+}
+.testimonial-section-padding::before {
+  background: #000;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+.testimonial-carousel-item h4 {
+  font-size: 18px;
+  opacity: .6;
+}
+
+.testimonial-carousel-items.owl-carousel .owl-dots > div {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    opacity: .5;
+    transition: .3s;
+}
+.testimonial-carousel-items.owl-carousel .owl-dots > div.active {
+    opacity: 1;
+}
+
+/* Start Responsive CSS */
+/* breakpoint-xs: 0; breakpoint-sm: 576px; breakpoint-md: 768px; breakpoint-lg: 992px; breakpoint-xl: 1200px; */
