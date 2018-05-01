@@ -1,0 +1,197 @@
+@mixin box-shadow-1() {
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.2), 0 1px 6px 0 rgba(0,0,0,.19);
+}
+@mixin vertical-line-light() {
+  position: absolute;
+  content: "";
+  width: 4px;
+  background-color: rgba(100,100,100,.1);
+  z-index: 1;
+  top: 10%;
+  right: 0;
+  height: 80%;
+}
+@mixin bg-image(){
+  background-color: #ddd;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.mt-7 {
+  margin-top: 7rem;
+}
+.heading-5 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.bor-rad{
+  border-radius: .5rem;
+  overflow: hidden;
+}
+.vertical-line-light {
+  @include vertical-line-light();
+}
+footer, header {
+  .navbar-brand {
+    img {
+      max-width: 100%;
+      height: 4rem;
+      transition: .3;
+    }
+  }
+  p{
+    opacity: .8;
+  }
+}
+.teal {
+    background-color: #009688!important;
+}
+
+
+// start Header/Nav/Hero Section
+header{
+  a.navbar-brand {
+    font-weight:  700;
+    text-transform:  uppercase;
+    letter-spacing:  4px;
+    border: 1px solid;
+    margin:  0;
+    overflow:  hidden;
+    padding:  0;
+    border-radius: 18rem;
+    padding-right: 1rem;
+    img {
+        padding:  0;
+        margin:  0;
+        transform: scale(1.35);
+        border-radius: 0;
+    }
+    span {
+        font-weight:  200;
+        letter-spacing:  6px;
+    }
+  }
+  .top-nav-collapse{
+    .navbar-brand {
+      img {
+        max-width: 100%;
+        height: 3rem;
+        transition: .3s;
+      }
+    }
+  }
+  @media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 100vh;
+    }
+  }
+
+  .top-nav-collapse {
+    background-color: #009688 !important;
+  }
+
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #009688 !important;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background: #009688 !important;
+    }
+  }
+
+  .rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(0, 0, 0, .7), rgba(255,255,255,.1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, .7), rgba(255,255,255,.1) 100%);
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, .7), rgba(255,255,255,.1) 100%);
+  }
+}
+// end Header/Nav/Hero Section
+
+
+// start footer
+.footer-content-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  // box-shadow: 0 1px 6px 0 rgba(0,0,0,.2), 0 1px 6px 0 rgba(0,0,0,.19);
+  overflow: hidden;
+
+  .apps-download-section {
+    width: 100%;
+
+    .content-box {
+      padding: 1rem 0 1rem 1rem;
+    }
+  }
+
+  .footer-banner {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    &:after {
+      background-color: #ddd;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("../img/mobile-2.png");
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -100%;
+      left: auto;
+      width: 96%;
+      height: 100%;
+      content: "";
+      border-radius: 4px;
+      // border-top-left-radius: 0;
+      // border-bottom-left-radius: 0;
+      @include box-shadow-1();
+    }
+  }
+}
+
+.content-box {
+  .footer-body {
+    display: flex;
+    flex-flow: column;
+
+    .apps-download-btns {
+      display: flex;
+      flex: 0 50%;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      a {
+        margin: 0.5rem 0.25rem;
+      }
+    }
+  }
+}
+
+
+
+
+.about-us-bg{
+  @include bg-image();
+  background-position: center top;
+  background-image: url("../img/about-us.jpg");
+  min-height: 15rem;
+  height: 100%;
+}
