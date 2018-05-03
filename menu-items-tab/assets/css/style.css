@@ -1140,7 +1140,8 @@
 
 .section-padding {
   padding: 5rem 0;
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  margin: 5rem 0; }
 
 .row.minus-margin {
   margin: 0 -30px; }
@@ -1149,12 +1150,28 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-size: 400%;
+  color: #269603;
+  position: relative;
+  padding-bottom: 0.5rem; }
+  .heading-1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.25rem;
+    background: #269603;
+    opacity: 0.25;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 1rem; }
 
 .sub-heading-1 {
   font-weight: 500;
-  font-size: 1.2rem;
-  padding: 1rem; }
+  font-size: 200%;
+  padding: 1rem;
+  color: #73bb40; }
 
 .pad-1 {
   padding: 1rem; }
@@ -1275,7 +1292,6 @@ li {
     align-items: center;
     justify-content: flex-start;
     align-self: stretch;
-    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 0.25rem;
     padding: 1rem 0;

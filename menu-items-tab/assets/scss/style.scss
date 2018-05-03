@@ -4,6 +4,7 @@
 .section-padding {
   padding: 5rem 0;
   background-color: $colorGrayLight;
+  margin: 5rem 0;
 }
 
 .row.minus-margin {
@@ -15,12 +16,30 @@
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   margin-bottom: 1rem;
+  font-size: 400%;
+  color: $colorPrimaryDark;
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 0.25rem;
+    background: $colorPrimaryDark;
+    opacity: 0.25;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 1rem;
+  }
 }
 
 .sub-heading-1 {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 200%;
   padding: 1rem;
+  color: $colorPrimary;
 }
 
 .pad-1 {
@@ -54,17 +73,18 @@ li {
 }
 
 .site-btn-primary {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    background: $colorPrimary;
-    color: $textWhite !important;
-    letter-spacing: 4px;
-    &:hover{
-      background: $colorPrimaryDark;
-    }
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  background: $colorPrimary;
+  color: $textWhite !important;
+  letter-spacing: 4px;
+
+  &:hover {
+    background: $colorPrimaryDark;
+  }
 }
 
 .btns-wrapper {
@@ -84,6 +104,7 @@ li {
     border-radius: 0.25rem;
     background: transparent;
     padding: 0.25rem 0.5rem;
+
     & span {
       position: relative;
       z-index: 1;
@@ -92,12 +113,14 @@ li {
       padding-right: 0.125rem;
     }
   }
+
   .add-cart {
     flex-flow: row nowrap;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
+
     i.fa {
       padding-right: 0.5rem;
       font-size: 120%;
@@ -105,7 +128,6 @@ li {
   }
 }
 // end button
-
 @mixin bg-img() {
   background-position: center;
   background-repeat: no-repeat;
@@ -151,7 +173,6 @@ li {
     align-items: center;
     justify-content: flex-start;
     align-self: stretch;
-    background-color: $colorDarkPrimary;
     color: $textWhite;
     border-radius: 0.25rem;
     padding: 1rem 0;
