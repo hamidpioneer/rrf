@@ -1,0 +1,370 @@
+@import 'core/colors';
+@import 'site-colors';
+
+.section-padding {
+  padding: 5rem 0;
+  background-color: $colorGrayLight;
+}
+
+.row.minus-margin {
+  margin: 0 -30px;
+}
+
+.heading-1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sub-heading-1 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.pad-1 {
+  padding: 1rem;
+}
+
+* > a,
+a {
+  color: $textLink !important;
+  text-decoration: none;
+}
+// start button (li>a)
+
+li {
+  flex: 1 0;
+
+  a {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background: $colorPrimary;
+    color: $textWhite !important;
+    letter-spacing: 4px;
+  }
+
+  &.active a {
+    background-color: $colorPrimaryDark;
+  }
+}
+
+.site-btn-primary {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    background: $colorPrimary;
+    color: $textWhite !important;
+    letter-spacing: 4px;
+    &:hover{
+      background: $colorPrimaryDark;
+    }
+}
+
+.btns-wrapper {
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  .item-price-tag {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $colorAccent !important;
+    font-weight: 700;
+    border-radius: 0.25rem;
+    background: transparent;
+    padding: 0.25rem 0.5rem;
+    & span {
+      position: relative;
+      z-index: 1;
+      top: -.25rem;
+      font-size: 120%;
+      padding-right: 0.125rem;
+    }
+  }
+  .add-cart {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    i.fa {
+      padding-right: 0.5rem;
+      font-size: 120%;
+    }
+  }
+}
+// end button
+
+@mixin bg-img() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $colorPlaceholder;
+  height: 100%;
+  max-width: 100%;
+}
+
+.colorGradientPrimary-1 {
+  @include gradientColorPrimary-1();
+}
+
+.colorGradientPrimary-2 {
+  @include gradientColorPrimary-2();
+}
+
+.colorGradientPrimary-3 {
+  @include gradientColorPrimary-3();
+}
+
+.colorGradientPrimary-4 {
+  @include gradientColorPrimary-4();
+}
+// end MISC
+//////////////////////////////////////////////////////////////
+// start Menu-Tab-Section
+
+.site-tab-section {
+  display: flex;
+  flex: 1 1;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  padding: 5rem 3rem;
+
+  .section-title {
+    flex: 1 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    background-color: $colorDarkPrimary;
+    color: $textWhite;
+    border-radius: 0.25rem;
+    padding: 1rem 0;
+    margin: 0 1rem 3rem;
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .menu-tab-wrapper {
+    border-radius: 0.25rem;
+    background: transparent;
+    padding: 0 1rem 1rem;
+
+    .tab-lists {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex: 1 0;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
+      text-transform: uppercase;
+      padding: 1rem;
+      border-bottom: 0.5rem solid $colorBorderPrimary;
+      background: $colorGrayLight;
+
+      li {
+        flex: 1 0;
+
+        a {
+          display: flex;
+          flex: 1;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          background: $colorPrimary;
+          color: #fff !important;
+          letter-spacing: 4px;
+        }
+
+        &.active a {
+          background-color: $colorPrimaryDark;
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 0 1rem;
+      border-radius: 0.25rem;
+      border-top: 0;
+      background: $colorGrayLight;
+
+      .bg-img-wrapper {
+        .banner-wrapper {
+          border-radius: 0.25rem;
+          overflow: hidden;
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+        }
+
+        .menu-banner-bg {
+          @include bg-img();
+          min-height: 15rem;
+          max-height: 20rem;
+          position: relative;
+          z-index: 1;
+          transition: all 0.55s ease-in-out;
+          transform: rotate(0deg) scale(1.5);
+
+          &:hover {
+            transform: rotate(0deg) scale(1);
+          }
+
+          &.banner-bg-1 {
+            background-image: url("../img/juice-banner.jpg");
+          }
+
+          &.banner-bg-2 {
+            background-image: url("../img/coffee-banner.jpg");
+          }
+
+          &.banner-bg-3 {
+            background-image: url("../img/salad-banner.jpg");
+          }
+
+          &.banner-bg-4 {
+            background-image: url("../img/juice-banner.jpg");
+          }
+
+          &.banner-bg-5 {
+            background-image: url("../img/fish-banner.jpg");
+          }
+
+          &.banner-bg-6 {
+            background-image: url("../img/salad-banner.jpg");
+          }
+
+          &.banner-bg-7 {
+            background-image: url("../img/juice-banner.jpg");
+          }
+        }
+      }
+
+      .single-item-wrapper {
+        margin: 1rem 0;
+        flex: 1;
+
+        .single-item {
+          display: flex;
+          flex: 0;
+          flex-flow: row nowrap;
+          height: 100%;
+          position: relative;
+          z-index: 1;
+
+          &:hover {
+            .content-img {
+              div {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+
+        .content-box {
+          display: flex;
+          flex-basis: 60%;
+          flex-flow: row wrap;
+          flex: 2 1 100%;
+
+          .price-tag {
+            padding: 0.5rem 1rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: $colorBlack !important;
+            border: 1px solid #fff;
+            color: $textWhite !important;
+            z-index: 2;
+
+            span {
+              color: $colorAccent;
+              position: relative;
+              top: -.25rem;
+              padding-right: 0.25rem;
+              font-size: 110% !important;
+            }
+          }
+        }
+
+        .content-img {
+          flex-basis: 40%;
+          flex: 1 2 100%;
+          overflow: hidden;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem;
+
+          div {
+            transform: scale(1.2);
+            transition: all 0.55s ease-in-out;
+          }
+
+          .single-item-bg-1 {
+            @include bg-img();
+            background-image: url("../img/food-1.jpg");
+          }
+
+          .single-item-bg-2 {
+            @include bg-img();
+            background-image: url("../img/food-6.jpg");
+          }
+
+          .single-item-bg-3 {
+            @include bg-img();
+            background-image: url("../img/food-3.jpg");
+          }
+
+          .single-item-bg-4 {
+            @include bg-img();
+            background-image: url("../img/food-4.jpg");
+          }
+
+          .single-item-bg-5 {
+            @include bg-img();
+            background-image: url("../img/food-5.jpg");
+          }
+        }
+      }
+
+      .content-hover {
+        display: none;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+
+        &:hover {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: $colorDarkPrimary;
+          color: #fff !important;
+          display: flex;
+          flex: 1 1 100%;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column wrap;
+        }
+      }
+    }
+  }
+}
+// end Menu-Tab-Section
